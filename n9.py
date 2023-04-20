@@ -13,7 +13,7 @@ for i in range(a):
     with Image.open(im) as img:
         img = img.transpose(Image.FLIP_TOP_BOTTOM)
         img.save('pictures_new/'+im+".jpg")
-        #img.show()
+        img.show()
 def n1():
     # os.mkdir("pictures_new")
     myPath = os.getcwd()
@@ -40,7 +40,7 @@ def n1():
                 img = img.transpose(Image.FLIP_TOP_BOTTOM)
                 img.save('pictures_new/' + im + r)
                 img.show()
-#n1()
+n1()
 def n2():
     with open("data.csv") as r_file:
         file_reader = csv.reader(r_file, delimiter=",")
